@@ -1,0 +1,46 @@
+{
+  "testModules": [
+    {
+      "moduleId": "/Users/benny/opt/ai-coding-tryout/heather/frontend/src/App.test.tsx",
+      "tests": [
+        {
+          "name": "should calculate 2 + 2 correctly",
+          "fullName": "should calculate 2 + 2 correctly",
+          "state": "passed"
+        },
+        {
+          "name": "should render the Life left button",
+          "fullName": "App > should render the Life left button",
+          "state": "passed"
+        },
+        {
+          "name": "should have Life left button disabled when no date is entered",
+          "fullName": "App > should have Life left button disabled when no date is entered",
+          "state": "passed"
+        },
+        {
+          "name": "should have Life left button enabled when a date is entered",
+          "fullName": "App > should have Life left button enabled when a date is entered",
+          "state": "passed"
+        },
+        {
+          "name": "should calculate and display life left when button is clicked",
+          "fullName": "App > should calculate and display life left when button is clicked",
+          "state": "passed"
+        },
+        {
+          "name": "should calculate life left for 'female' using 85 years expectancy",
+          "fullName": "App > should calculate life left for 'female' using 85 years expectancy",
+          "state": "passed"
+        },
+        {
+          "name": "should calculate life left for 'male' using 75 years expectancy",
+          "fullName": "App > should calculate life left for 'male' using 75 years expectancy",
+          "state": "passed"
+        }
+      ]
+    }
+  ],
+  "unhandledErrors": [],
+  "reason": "passed"
+}

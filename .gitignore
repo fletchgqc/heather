@@ -47,3 +47,4 @@ out/
 
 ### Logs ###
 logs/
+/node_modules

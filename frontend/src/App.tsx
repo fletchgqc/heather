@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -6,6 +6,8 @@ function App() {
   const [age, setAge] = useState<number | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+  const [lifeLeft, setLifeLeft] = useState<number | null>(null)
+  const [gender, setGender] = useState<'male' | 'female'>('male')
 
   const calculateAge = async () => {
     if (!birthdate) {
@@ -45,6 +47,18 @@ function App() {
         <div className="age-calculator">
           <h2>Age Calculator</h2>
           <div className="form-group">
+            <label htmlFor="gender">Gender:</label>
+            <select
+              id="gender"
+              value={gender}
+              onChange={(e) => setGender(e.target.value as 'male' | 'female')}
+              data-testid="gender-select"
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div className="form-group">
             <label htmlFor="birthdate">Enter your birthdate:</label>
             <input
               id="birthdate"
@@ -52,15 +66,31 @@ function App() {
               value={birthdate}
               onChange={(e) => setBirthdate(e.target.value)}
               max={new Date().toISOString().split('T')[0]}
+              data-testid="birthdate-input"
             />
           </div>
 
-          <button onClick={calculateAge} disabled={loading || !birthdate}>
+          <button onClick={calculateAge} disabled={loading || !birthdate} data-testid="calculate-age-button">
             {loading ? 'Calculating...' : 'Calculate Age'}
           </button>
 
+          <button onClick={() => {
+            const lifeExpectancy = gender === 'female' ? 85 : 75
+            setLifeLeft(lifeExpectancy - (age || 0))
+          }} disabled={!birthdate} data-testid="life-left-button">
+            Life left
+          </button>
+
+          {lifeLeft !== null && (
+            <div className="result success" data-testid="life-left-result">
+              <p>
+                <strong>{lifeLeft} years left</strong>
+              </p>
+            </div>
+          )}
+
           {age !== null && (
-            <div className="result success">
+            <div className="result success" data-testid="age-result">
               <p>
                 Your age is: <strong>{age} years</strong>
               </p>
