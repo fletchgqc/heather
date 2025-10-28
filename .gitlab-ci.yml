@@ -73,7 +73,7 @@ deploy-backend:
 
 deploy-frontend:
   stage: deploy
-  image: node:22-alpine@sha256:bd26af08779f746650d95a2e4d653b0fd3c8030c44284b6b98d701c9b5eb66b9
+  image: node:24-alpine@sha256:b0d33ed19a912e1a18ceb83e139815233cd49c123fe025e67a7c506c93e3f728
   variables:
     BUCKET_NAME: "heather-frontend"
   before_script:
@@ -130,7 +130,7 @@ build-backend-mr:
 
 build-frontend-mr:
   stage: build
-  image: node:22-alpine@sha256:bd26af08779f746650d95a2e4d653b0fd3c8030c44284b6b98d701c9b5eb66b9
+  image: node:24-alpine@sha256:b0d33ed19a912e1a18ceb83e139815233cd49c123fe025e67a7c506c93e3f728
   script:
     - cd frontend
     - npm ci
