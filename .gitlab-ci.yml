@@ -13,7 +13,7 @@ variables:
 
 build-backend:
   stage: build
-  image: gradle:9-jdk21@sha256:db12d4789367d4676ef3d8aa672685e0e451705776b53f7d81c953fba3b1d55b
+  image: gradle:9-jdk21@sha256:553488a408c5be648ef81e54209b5fa94a212c0781c1a780e3f0714b4d6190fc
   before_script:
     # Install gcloud SDK for registry authentication
     - apt-get update && apt-get install -y curl
@@ -116,7 +116,7 @@ deploy-frontend:
 
 build-backend-mr:
   stage: build
-  image: gradle:9-jdk21@sha256:db12d4789367d4676ef3d8aa672685e0e451705776b53f7d81c953fba3b1d55b
+  image: gradle:9-jdk21@sha256:553488a408c5be648ef81e54209b5fa94a212c0781c1a780e3f0714b4d6190fc
   script:
     - cd backend
     - ./gradlew check build --no-daemon
