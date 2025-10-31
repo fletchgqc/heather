@@ -1,0 +1,11 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "memory-keeper",
+    "maven-tools",
+    "context7"
+  ],
+  "disabledMcpjsonServers": [
+    "maven-deps-server"
+  ]
+}
