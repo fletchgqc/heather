@@ -1,5 +1,7 @@
 package de.codecentric.heather.age
 
+import io.swagger.v3.oas.annotations.Operation
+import io.swagger.v3.oas.annotations.Parameter
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
@@ -12,14 +14,32 @@ class AgeController(
 ) {
 
     @GetMapping("/api/age")
-    fun calculateAge(@RequestParam birthdate: LocalDate): ResponseEntity<Map<String, Any>> {
+    @Operation(
+        summary = "Calculate age and estimated time remaining",
+        description = "Calculates current age and estimated years/days remaining " +
+            "based on birthdate and gender-specific life expectancy",
+    )
+    fun calculateAge(
+        @Parameter(description = "Date of birth in ISO format (YYYY-MM-DD)", required = true)
+        @RequestParam birthdate: LocalDate,
+        @Parameter(description = "Gender identity (MALE, FEMALE, OTHER)", required = true)
+        @RequestParam gender: Gender,
+    ): ResponseEntity<Any> {
         if (birthdate.isAfter(LocalDate.now())) {
             return ResponseEntity.badRequest().body(
                 mapOf("error" to "Birthdate cannot be in the future"),
             )
         }
 
-        val age = ageCalculator.calculateAge(birthdate)
-        return ResponseEntity.ok(mapOf("age" to age))
+        val ageData = ageCalculator.calculateAgeWithTimeRemaining(birthdate, gender)
+        return ResponseEntity.ok(
+            mapOf(
+                "age" to ageData.age,
+                "timeRemaining" to mapOf(
+                    "years" to ageData.timeRemaining.years,
+                    "days" to ageData.timeRemaining.days,
+                ),
+            ),
+        )
     }
 }
