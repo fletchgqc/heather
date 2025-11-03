@@ -5,7 +5,7 @@ Follow the `Instructions` to implement the `Plan` then `Report` the completed wo
 - Read the plan, think hard about the plan and implement the plan.
 
 ## Plan
-$ARGUMENTS
+$1
 
 ## Report
 - Summarize the work you've just done in a concise bullet point list.
