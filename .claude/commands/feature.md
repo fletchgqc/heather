@@ -20,11 +20,9 @@ Create a new plan in specs/*.md to implement the `Feature` using the exact speci
 
 Focus on the following files:
 - `README.md` - Contains the project overview and instructions.
-- `app/server/**` - Contains the codebase server.
-- `app/client/**` - Contains the codebase client.
+- `backend/**` - Contains the codebase server.
+- `frontend/**` - Contains the codebase client.
 - `scripts/**` - Contains the scripts to start and stop the server + client.
-
-Ignore all other files in the codebase.
 
 ## Plan Format
 
@@ -89,4 +87,4 @@ Execute every command to validate the feature works correctly with zero regressi
 ```
 
 ## Feature
-$ARGUMENTS
+$1
