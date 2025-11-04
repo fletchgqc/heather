@@ -11,12 +11,14 @@
 ## Setup:
 - clone https://github.com/fletchgqc/heather
 - Open the code in your IDE and look around.
-- Start claude in full agentic mode:
+- Start claude in full agentic mode; use one of the following options:
 	- with agentbox (safer):
 		- clone https://github.com/fletchgqc/agentbox
 		- create shell alias `ab` to agentbox executable
 		- in heather directory: `ab`
-	- alternatively YOLO:
+	- as a devcontainer (safer):
+		- open the project in your IDE. It should prompt you to "open as devcontainer". If not, an internet search for IDE doco should help.
+	- simple and hey, YOLO:
 		- in heather directory: `claude --dangerously-skip-permissions`
 - In claude: `/install`
 - Outside claude/agentbox: `scripts/start-all.sh`
@@ -74,6 +76,7 @@
 ## Other Ideas:
 - Anytime you have corrected claude code once or twice, try running `/learn`
 - Claude ignoring important system prompt instructions? Try https://github.com/lexler/claude-code-user-reminders
+- You may want to try out the claude code plugin for their IDE. I don't use it.
 
 ## Slash, Skill, SubAgent
 ### Why Slash Command
