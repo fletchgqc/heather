@@ -11,15 +11,6 @@
 ## Setup:
 - clone https://github.com/fletchgqc/heather
 - Open the code in your IDE and look around.
-- Start claude in full agentic mode; use one of the following options:
-	- with agentbox (safer):
-		- clone https://github.com/fletchgqc/agentbox
-		- create shell alias `ab` to agentbox executable
-		- in heather directory: `ab`
-	- as a devcontainer (safer):
-		- open the project in your IDE. It should prompt you to "open as devcontainer". If not, an internet search for IDE doco should help.
-	- simple and hey, YOLO:
-		- in heather directory: `claude --dangerously-skip-permissions`
 - In claude: `/install`
 - Outside claude/agentbox: `scripts/start-all.sh`
 - Visit http://localhost:5173/
@@ -45,6 +36,18 @@
 	3. `@test-prompt.png`. Surprise! What happened?
 
 *Note: whenever you manually edit files in the .claude folder, you need to restart claude for changes to be noticed.*
+
+## Full Agentic Mode
+Sick of approving permission dialogs? Start claude in full agentic mode; use one of the following options:
+
+- with agentbox (safer):
+	- clone https://github.com/fletchgqc/agentbox
+	- create shell alias `ab` to agentbox executable
+	- in heather directory: `ab`
+- as a devcontainer (safer):
+	- open the project in your IDE. It should prompt you to "open as devcontainer". If not, an internet search for IDE doco should help.
+- simple and hey, YOLO:
+	- in heather directory: `claude --dangerously-skip-permissions`
 
 ## Challenges:
 (Tip: `/help` and `/config` are your friends)
