@@ -109,3 +109,7 @@ response enters the main context. This prevents large web pages from consuming e
 
 >  For example, if I use WebFetch to get information from a large documentation page, the entire HTML/markdown of that page doesn't get loaded into my context.
   Instead, only the smaller model's answer to my specific query about that page gets returned to me.
+
+
+`/init`
+brainstormen, was wir machen können.
