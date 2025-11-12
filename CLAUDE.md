@@ -16,3 +16,10 @@ Frontend is deployed to Cloud Storage, backend to Cloud Run. The CI/CD pipeline 
 ## Use Sub-Agents
 
 Before using any tool directly, check if a specialized sub-agent exists for this task type.
+
+## Active Technologies
+- Shell script (bash), Markdown command files + Unix shell commands (find, mv, cp, mkdir), Claude Code command execution (001-fix-skill-duplication)
+- File system (no database) (001-fix-skill-duplication)
+
+## Recent Changes
+- 001-fix-skill-duplication: Added Shell script (bash), Markdown command files + Unix shell commands (find, mv, cp, mkdir), Claude Code command execution
