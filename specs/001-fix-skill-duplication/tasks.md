@@ -25,9 +25,9 @@
 
 **Purpose**: Project initialization and documentation setup
 
-- [ ] T001 Read and understand current command files at .claude/commands/opencode-to-claude.md
-- [ ] T002 Read and understand current command files at .claude/commands/claude-to-opencode.md
-- [ ] T003 Update CLAUDE.md to reflect shell script work per constitution
+- [X] T001 Read and understand current command files at .claude/commands/opencode-to-claude.md
+- [X] T002 Read and understand current command files at .claude/commands/claude-to-opencode.md
+- [X] T003 Update CLAUDE.md to reflect shell script work per constitution
 
 ---
 
@@ -37,10 +37,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Create backup branch or ensure git working tree is clean
-- [ ] T005 Create test directory structure for validation (.test-sync/)
-- [ ] T006 [P] Create sample Claude skill for testing at .test-sync/.claude/skills/test-agent/SKILL.md
-- [ ] T007 [P] Create sample OpenCode agent for testing at .test-sync/.opencode/agent/test-agent.md
+- [X] T004 Create backup branch or ensure git working tree is clean
+- [X] T005 Create test directory structure for validation (.test-sync/)
+- [X] T006 [P] Create sample Claude skill for testing at .test-sync/.claude/skills/test-agent/SKILL.md
+- [X] T007 [P] Create sample OpenCode agent for testing at .test-sync/.opencode/agent/test-agent.md
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -54,14 +54,14 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Modify find command in .claude/commands/opencode-to-claude.md to exclude SKILL.md files
-- [ ] T009 [US1] Add -type f flag to ensure only files are matched
-- [ ] T010 [US1] Add -f flag to mv command for idempotent overwrites
-- [ ] T011 [US1] Remove unnecessary basename logic from rename operation
-- [ ] T012 [US1] Add success message output at end of conversion
-- [ ] T013 [US1] Test: Run conversion once and verify correct SKILL.md creation
-- [ ] T014 [US1] Test: Run conversion twice and verify no duplicates created
-- [ ] T015 [US1] Test: Verify existing SKILL.md files are not renamed
+- [X] T008 [US1] Modify find command in .claude/commands/opencode-to-claude.md to exclude SKILL.md files
+- [X] T009 [US1] Add -type f flag to ensure only files are matched
+- [X] T010 [US1] Add -f flag to mv command for idempotent overwrites
+- [X] T011 [US1] Remove unnecessary basename logic from rename operation
+- [X] T012 [US1] Add success message output at end of conversion
+- [X] T013 [US1] Test: Run conversion once and verify correct SKILL.md creation
+- [X] T014 [US1] Test: Run conversion twice and verify no duplicates created
+- [X] T015 [US1] Test: Verify existing SKILL.md files are not renamed
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -75,17 +75,17 @@
 
 ### Implementation for User Story 2
 
-- [ ] T016 [US2] Replace cp -r command with for-loop in .claude/commands/claude-to-opencode.md
-- [ ] T017 [US2] Add directory existence check in loop
-- [ ] T018 [US2] Add file existence check for SKILL.md before copying
-- [ ] T019 [US2] Use basename to extract agent name from skill directory
-- [ ] T020 [US2] Copy SKILL.md to flat .opencode/agent/[agent-name].md structure
-- [ ] T021 [US2] Add -f flag to cp command for idempotent overwrites
-- [ ] T022 [US2] Remove old find/mv command that renamed SKILL.md to agent-name.md
-- [ ] T023 [US2] Add success message output at end of conversion
-- [ ] T024 [US2] Test: Verify flat structure .opencode/agent/agent-name.md is created
-- [ ] T025 [US2] Test: Verify no nested directories are created
-- [ ] T026 [US2] Test: Verify multiple agents all placed flat under .opencode/agent/
+- [X] T016 [US2] Replace cp -r command with for-loop in .claude/commands/claude-to-opencode.md
+- [X] T017 [US2] Add directory existence check in loop
+- [X] T018 [US2] Add file existence check for SKILL.md before copying
+- [X] T019 [US2] Use basename to extract agent name from skill directory
+- [X] T020 [US2] Copy SKILL.md to flat .opencode/agent/[agent-name].md structure
+- [X] T021 [US2] Add -f flag to cp command for idempotent overwrites
+- [X] T022 [US2] Remove old find/mv command that renamed SKILL.md to agent-name.md
+- [X] T023 [US2] Add success message output at end of conversion
+- [X] T024 [US2] Test: Verify flat structure .opencode/agent/agent-name.md is created
+- [X] T025 [US2] Test: Verify no nested directories are created
+- [X] T026 [US2] Test: Verify multiple agents all placed flat under .opencode/agent/
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -99,13 +99,13 @@
 
 ### Implementation for User Story 3
 
-- [ ] T027 [US3] Add support for flat OpenCode structure in opencode-to-claude.md
-- [ ] T028 [US3] Add support for legacy nested OpenCode structure in opencode-to-claude.md
-- [ ] T029 [US3] Update find command to handle both .opencode/agent/*.md and .opencode/agent/*/*.md
-- [ ] T030 [US3] Ensure content preservation through both conversion directions
-- [ ] T031 [US3] Test: Convert Claude → OpenCode → Claude and verify file count matches
-- [ ] T032 [US3] Test: Verify file content is identical after bidirectional conversion
-- [ ] T033 [US3] Test: Verify metadata and permissions preserved
+- [X] T027 [US3] Add support for flat OpenCode structure in opencode-to-claude.md
+- [X] T028 [US3] Add support for legacy nested OpenCode structure in opencode-to-claude.md
+- [X] T029 [US3] Update find command to handle both .opencode/agent/*.md and .opencode/agent/*/*.md
+- [X] T030 [US3] Ensure content preservation through both conversion directions
+- [X] T031 [US3] Test: Convert Claude → OpenCode → Claude and verify file count matches
+- [X] T032 [US3] Test: Verify file content is identical after bidirectional conversion
+- [X] T033 [US3] Test: Verify metadata and permissions preserved
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -115,14 +115,14 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T034 [P] Run full quickstart.md validation checklist
-- [ ] T035 [P] Test performance with 20 agents (should complete in <5 seconds)
-- [ ] T036 [P] Test edge case: multiple files in source directory
-- [ ] T037 [P] Test edge case: existing target files (idempotency)
-- [ ] T038 [P] Test edge case: empty directories are ignored
-- [ ] T039 Verify all success/error messages display correctly
-- [ ] T040 Clean up test directory structure .test-sync/
-- [ ] T041 Final verification: both commands work end-to-end with real project
+- [X] T034 [P] Run full quickstart.md validation checklist
+- [X] T035 [P] Test performance with 20 agents (should complete in <5 seconds)
+- [X] T036 [P] Test edge case: multiple files in source directory
+- [X] T037 [P] Test edge case: existing target files (idempotency)
+- [X] T038 [P] Test edge case: empty directories are ignored
+- [X] T039 Verify all success/error messages display correctly
+- [X] T040 Clean up test directory structure .test-sync/
+- [X] T041 Final verification: both commands work end-to-end with real project
 
 ---
 

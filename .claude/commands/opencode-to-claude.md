@@ -20,10 +20,10 @@ Execute the mapping now:
 
 !`cp -r .opencode/command/* .claude/commands/ 2>/dev/null || true`
 
-!`cp -r .opencode/agent/* .claude/skills/ 2>/dev/null || true`
+!`if ls .opencode/agent/*.md 1> /dev/null 2>&1; then for agent_file in .opencode/agent/*.md; do if [ -f "$agent_file" ]; then agent_name=$(basename "$agent_file" .md); mkdir -p ".claude/skills/$agent_name"; cp -f "$agent_file" ".claude/skills/$agent_name/SKILL.md"; fi; done; fi`
+
+!`for agent_dir in .opencode/agent/*/; do if [ -d "$agent_dir" ]; then agent_name=$(basename "$agent_dir"); if [ -f "$agent_dir/$agent_name.md" ]; then mkdir -p ".claude/skills/$agent_name"; cp -f "$agent_dir/$agent_name.md" ".claude/skills/$agent_name/SKILL.md"; fi; fi; done`
 
 !`cp AGENTS.md CLAUDE.md 2>/dev/null || true`
 
-!`find .claude/skills -name "*.md" -exec sh -c 'dir=$(dirname "$1"); base=$(basename "$1" .md); mv "$1" "$dir/SKILL.md"' _ {} \;`
-
-Mapping completed successfully! Both OpenCode and Claude formats are now available.
+!`echo "Mapping completed successfully! OpenCode agents converted to Claude skills."`
