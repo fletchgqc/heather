@@ -18,9 +18,10 @@ Steps to follow:
 3. Parse the arguments to determine how many file paths were provided
 
 **If multiple files:**
-- For each file path, launch a Task agent with subagent_type="general-purpose" and this prompt:
+- IMPORTANT: Launch Task agents SERIALLY, one at a time. Wait for each agent to complete before launching the next. DO NOT launch agents in parallel as they will conflict when manipulating git branches.
+- For each file path (processing one at a time), launch a Task agent with subagent_type="general-purpose" and this prompt:
   "You are processing the class file at {full_path}. Extract the class name from the path. Ensure you're on the main branch with a clean working directory. Create a new git branch named {ClassName}. Then sequentially: (1) Launch a Task agent with the prompt: 'Read the instructions in /workspace/.claude/agents/class-to-md-agent.md and follow them to process the class file at {full_path}'. Commit with 'agent class-to-md finished'. (2) Launch a Task agent with the prompt: 'Read the instructions in /workspace/.claude/agents/hello-agent.md and follow them to process the class file at {full_path}'. Commit with 'agent write-hello finished'. (3) Launch a Task agent with the prompt: 'Read the instructions in /workspace/.claude/agents/world-agent.md and follow them to process the class file at {full_path}'. Commit with 'agent write-world finished'. Return to main branch and report the branch name and commits created."
-- Report summary of all processing when complete
+- After all agents have completed, report summary of all processing
 
 **If single file:**
 
