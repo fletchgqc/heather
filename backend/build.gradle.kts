@@ -28,7 +28,7 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("io.kotest:kotest-assertions-core-jvm:6.0.6")
 	testImplementation("io.mockk:mockk:1.14.6")
-	testImplementation("com.ninja-squad:springmockk:4.0.2")
+	testImplementation("com.ninja-squad:springmockk:5.0.1")
 	testImplementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.20.1")
 
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
