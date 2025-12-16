@@ -4,7 +4,7 @@ plugins {
 	id("org.springframework.boot") version "4.0.0"
 	id("io.spring.dependency-management") version "1.1.7"
 	id("io.gitlab.arturbosch.detekt") version "1.23.8"
-	id("com.google.cloud.tools.jib") version "3.5.1"
+	id("com.google.cloud.tools.jib") version "3.5.2"
 	id("org.springdoc.openapi-gradle-plugin") version "1.9.0"
 }
 
@@ -27,7 +27,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("io.kotest:kotest-assertions-core-jvm:6.0.7")
-	testImplementation("io.mockk:mockk:1.14.6")
+	testImplementation("io.mockk:mockk:1.14.7")
 	testImplementation("com.ninja-squad:springmockk:5.0.1")
 	testImplementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.20.1")
 
