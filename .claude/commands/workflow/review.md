@@ -16,4 +16,4 @@ When reviewing, point out:
  - security issues or potential problems
  - anything which deviates from existing project conventions.
 
-Suggest solutions to any issues you find. Where multiple similarly good solutions or options exist, explain all options.
+Suggest solutions to any issues you find. Where multiple good solutions or options exist, explain all options.

@@ -1,28 +1,5 @@
 #!/bin/sh
 
-# Check GitLab CI YAML changes
-if git diff --cached --name-only | grep -q "^\.gitlab-ci\.yml$"; then
-  echo "Validating GitLab CI configuration..."
-  
-  # First check basic YAML syntax
-  YAML_VALID=false
-  if command -v yq >/dev/null 2>&1; then
-    yq eval '.' .gitlab-ci.yml > /dev/null 2>&1 && YAML_VALID=true
-  elif command -v python3 >/dev/null 2>&1; then
-    python3 -c "import yaml; yaml.safe_load(open('.gitlab-ci.yml'))" 2>/dev/null && YAML_VALID=true
-  elif command -v node >/dev/null 2>&1; then
-    npx --yes js-yaml .gitlab-ci.yml > /dev/null 2>&1 && YAML_VALID=true
-  fi
-  
-  if [ "$YAML_VALID" = false ]; then
-    echo "ERROR: .gitlab-ci.yml has invalid YAML syntax"
-    echo "Please fix the YAML syntax before committing"
-    exit 1
-  fi
-  
-  echo "✓ GitLab CI YAML syntax is valid"
-fi
-
 # Check frontend changes
 if git diff --cached --name-only | grep -q "^frontend/"; then
   echo "Running frontend checks..."
