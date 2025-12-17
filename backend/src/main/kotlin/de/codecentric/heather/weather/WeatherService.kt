@@ -19,7 +19,7 @@ class WeatherService {
         val today = LocalDate.now()
         return WeatherResponse(
             current = generateCurrentWeather(today),
-            forecast = generateForecast(today)
+            forecast = generateForecast(today),
         )
     }
 
@@ -29,7 +29,7 @@ class WeatherService {
         return CurrentWeather(
             temperature = baseTemp,
             condition = condition,
-            description = condition.displayText
+            description = condition.displayText,
         )
     }
 
@@ -45,7 +45,7 @@ class WeatherService {
                 temperatureHigh = baseTemp + 4 + variance,
                 temperatureLow = baseTemp - 4 + variance,
                 condition = condition,
-                description = condition.displayText
+                description = condition.displayText,
             )
         }
     }
@@ -56,13 +56,13 @@ class WeatherService {
      */
     private fun getConditionForDay(dayOfWeek: Int): WeatherCondition {
         return when (dayOfWeek) {
-            1 -> WeatherCondition.SUNNY          // Monday
-            2 -> WeatherCondition.PARTLY_CLOUDY  // Tuesday
-            3 -> WeatherCondition.CLOUDY         // Wednesday
-            4 -> WeatherCondition.RAINY          // Thursday
-            5 -> WeatherCondition.PARTLY_CLOUDY  // Friday
-            6 -> WeatherCondition.SUNNY          // Saturday
-            7 -> WeatherCondition.SUNNY          // Sunday
+            1 -> WeatherCondition.SUNNY // Monday
+            2 -> WeatherCondition.PARTLY_CLOUDY // Tuesday
+            3 -> WeatherCondition.CLOUDY // Wednesday
+            4 -> WeatherCondition.RAINY // Thursday
+            5 -> WeatherCondition.PARTLY_CLOUDY // Friday
+            6 -> WeatherCondition.SUNNY // Saturday
+            7 -> WeatherCondition.SUNNY // Sunday
             else -> WeatherCondition.CLOUDY
         }
     }

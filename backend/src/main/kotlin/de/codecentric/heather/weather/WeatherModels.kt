@@ -11,7 +11,7 @@ enum class WeatherCondition(val displayText: String) {
     CLOUDY("Cloudy"),
     RAINY("Rainy"),
     STORMY("Stormy"),
-    SNOWY("Snowy")
+    SNOWY("Snowy"),
 }
 
 /**
@@ -20,7 +20,7 @@ enum class WeatherCondition(val displayText: String) {
 data class CurrentWeather(
     val temperature: Int,
     val condition: WeatherCondition,
-    val description: String
+    val description: String,
 )
 
 /**
@@ -31,7 +31,7 @@ data class DailyForecast(
     val temperatureHigh: Int,
     val temperatureLow: Int,
     val condition: WeatherCondition,
-    val description: String
+    val description: String,
 )
 
 /**
@@ -39,5 +39,5 @@ data class DailyForecast(
  */
 data class WeatherResponse(
     val current: CurrentWeather,
-    val forecast: List<DailyForecast>
+    val forecast: List<DailyForecast>,
 )
