@@ -31,6 +31,16 @@ Sick of waiting for pipelines to fail and put error into LLM? Prompt successfull
 
 ## Other
 - [Playwright MCP](https://github.com/microsoft/playwright-mcp) for LLM-powered frontend tests.
+- AI is great for resolving merge conflicts.
+- What prompts should you share and maintain as a team? Create slash-commands.
+
+## Pitfalls
+- *Too much* code, doco, tests, everthing. LARGE LANGUAGE model. Costs come later. Reviewing prompts:
+    - "Look for opportunities where it should have edited existing code rather than adding new code."
+    - "Is this implementation overly complex?"
+    - "We are still pre-customer - any unnecessary fallbacks, unnecessary versioning, testing overkill in this?"
+    - Keywords like: simple, lean, YAGNI
+- Workslop and shift-right.
 
 ## Brainstorming ideas
 - Throwaway code (Felix's change to Agentbox - prompts to allow us to produce own extensions).

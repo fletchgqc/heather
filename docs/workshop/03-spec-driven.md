@@ -40,6 +40,8 @@ so that <PURPOSE>
     - Write function names and 1-3 sentences about what they do.
     - Write test names and 5-10 words about behavior to cover.
     - Don't just say "what I'm going to do" but rather focus on concept, architecture.
+- Consider size of change - just do it, or multiple PRs, or even larger.
+- Breaking things into smallest possible changes is almost always a good idea in software engineering.
 
 #### Iterate on plan
 Try stuff like:

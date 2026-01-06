@@ -52,6 +52,7 @@ Always give the Agent full permissions. Having to approve actions is painfully i
 	- Default to a fast model and retry when necessary with a slow model. This avoids the habit of just always working with the expensive one and never learning.
 
 ## Know Your Tool
+- Prompt: "List all core, built-in non-mcp development tools available to you. Display in bullet format. Use typescript function syntax with parameters."
 - Try out 3 different slash commands / Opencode ctrl-x, ctrl-p.
 
 ### Challenges:
@@ -74,3 +75,10 @@ Excercises are based on claude code, almost all should be achievable in all tool
 7. Set up your tool to always show your current git branch on the screen.
 8. Add "always start your answers with :D" to CLAUDE.md from within claude.
 8. Run claude as a single-use command: `claude --dangerously-skip-permissions -p "your prompt here"`
+
+## Copilot-specific Advice
+- Use vscode instead of IntelliJ for latest features, e.g. Plan Mode.
+- Use Copilot CLI if possible.
+- Use OpenCode instead.
+- Ensure your organisation has enabled the latest models, looking at the GitHub page. Ask them!
+- Read the doco on the VSCode site: https://code.visualstudio.com/docs/copilot/overview - quite helpful.
