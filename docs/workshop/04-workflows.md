@@ -2,7 +2,7 @@
 This is a collection of inspirational ideas to get you thinking of what might help in your project.
 
 ## GitHub OSS interaction
-- Let interact with GitHub / GitLab for you. [Authentication tips](https://github.com/fletchgqc/agentbox?tab=readme-ov-file#authenticating-to-git-or-other-scc-providers).
+- Let the agent interact with GitHub / GitLab for you. [Authentication tips](https://github.com/fletchgqc/agentbox?tab=readme-ov-file#authenticating-to-git-or-other-scc-providers).
 
 ## Pipeline-fixer
 Sick of waiting for pipelines to fail and put error into LLM? Prompt successfully used by Christoph Muth.
