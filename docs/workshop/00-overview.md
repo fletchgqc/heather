@@ -32,3 +32,31 @@ Take your own breaks as necessary. No group breaks (except lunch).
 ### Gather and share
 Let me know beforehand if you have something to share with the group.
 Come together and enjoy a couple of demos from participants (e.g. 10 Min).
+
+## Example Agenda
+### Day 1
+Talk: Introduction and developer's dilemma
+- Tools and Setup
+- Context Engineering
+
+#### Lunch
+Talk: save the company, advice, up to date, use the hype
+
+- Spec-driven development
+- Workflows
+
+### Day 2
+Talk: Prompt caching, spending codecentric money
+
+- AI-TDD
+- Autonomy levels
+
+Talk: Some skills never die
+
+- Open space
+- Professional vibe coding
+- Slash Commands, Skills, Subagents, MCP
+
+Talk: Charlie Chaplain
+
+- Prompt engineering?

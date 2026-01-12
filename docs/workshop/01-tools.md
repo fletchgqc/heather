@@ -5,6 +5,7 @@
 - Can you use AI in your project?
 - Try different models. Check usage in Portkey. GitHub hack.
 - Try some code changes?
+- What is a coding assistant, actually? Model, system prompt, tools, UI, features.
 - *End voice recording, summarise*
 
 ## This Repo
@@ -96,3 +97,6 @@ Excercises are based on claude code, almost all should be achievable in all tool
 - Use OpenCode instead.
 - Ensure your organisation has enabled the latest models, looking at the GitHub page. Ask them!
 - Read the doco on the VSCode site: https://code.visualstudio.com/docs/copilot/overview - quite helpful.
+
+## Final Words
+- Don't try every new tool, it's overwhelming. Learn the principles and you can apply them to new tools.

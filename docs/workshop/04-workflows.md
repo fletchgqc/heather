@@ -1,6 +1,16 @@
 # Workflows
 This is a collection of inspirational ideas to get you thinking of what might help in your project.
 
+## Core Principle
+- maximise automation, minimise wait.
+- maximise enjoyable human value add, minimise tedious and tiring work.
+- Where and how can we build it into our workflows? E.g.
+	- Record meetings discussing requirements, put into LLM. (Requirements 80% time vs coding 20%)
+	- Auto PR-Review on push?
+	- Auto PR on issue creation?
+    - What prompts should you share and maintain as a team? Create slash-commands.
+    - AI is great for resolving merge conflicts.
+
 ## GitHub OSS interaction
 - Let the agent interact with GitHub / GitLab for you. [Authentication tips](https://github.com/fletchgqc/agentbox?tab=readme-ov-file#authenticating-to-git-or-other-scc-providers).
 
@@ -29,12 +39,6 @@ Sick of waiting for pipelines to fail and put error into LLM? Prompt successfull
 ## Deterministic steps
 - Use hooks (claude code) or plugins (opencode) to deterministically ensure certain things run at certain times.
 
-## Other
-- [Augmented coding patterns](https://lexler.github.io/augmented-coding-patterns/)
-- [Playwright MCP](https://github.com/microsoft/playwright-mcp) for LLM-powered frontend tests.
-- AI is great for resolving merge conflicts.
-- What prompts should you share and maintain as a team? Create slash-commands.
-
 ## Pitfalls
 - *Too much* code, doco, tests, everthing. LARGE LANGUAGE model. Costs come later. Reviewing prompts:
     - "Look for opportunities where it should have edited existing code rather than adding new code."
@@ -49,3 +53,8 @@ Sick of waiting for pipelines to fail and put error into LLM? Prompt successfull
 
 ## Reading
 - https://code.claude.com/docs/en/common-workflows
+- [Augmented coding patterns](https://lexler.github.io/augmented-coding-patterns/)
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp) for LLM-powered frontend tests.
+- Learn from the pros, e.g. system prompts. One analysis of claude code prompt https://minusx.ai/blog/decoding-claude-code/
+- Use the Hype.
+    - "You need a good pipeline, good Tests, scans, doco, secret protection (git guardian etc)" -> nice excuse for good old crafting.
