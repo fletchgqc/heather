@@ -96,6 +96,9 @@ Excercises are based on claude code, almost all should be achievable in all tool
 8. Add "always start your answers with :D" to CLAUDE.md from within claude.
 8. Run claude as a single-use command: `claude --dangerously-skip-permissions -p "your prompt here"`
 
+## Build your own Agent!
+https://github.com/cc-ju/build-an-agent-workshop (from Jan Ulrich)
+
 ## Copilot-specific Advice
 - Use vscode instead of IntelliJ for latest features, e.g. Plan Mode.
 - Use Copilot CLI if possible.
