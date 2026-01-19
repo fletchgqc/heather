@@ -60,7 +60,7 @@ while read -r cidr; do
         exit 1
     fi
     echo "Adding GitHub range $cidr"
-    ipset add allowed-domains "$cidr"
+    ipset add allowed-domains "$cidr" -exist
 done < <(echo "$gh_ranges" | jq -r '(.web + .api + .git)[]' | aggregate -q)
 
 # Function to get network range from IP
@@ -90,7 +90,7 @@ for domain in "repo.maven.apache.org" "repo1.maven.org"; do
         fi
         network=$(get_network_range "$ip" 24)
         echo "Adding network $network for $domain"
-        ipset add allowed-domains "$network"
+        ipset add allowed-domains "$network" -exist
     done < <(echo "$ips")
 done
 
@@ -118,7 +118,7 @@ for domain in \
             exit 1
         fi
         echo "Adding $ip for $domain"
-        ipset add allowed-domains "$ip"
+        ipset add allowed-domains "$ip" -exist
     done < <(echo "$ips")
 done
 
