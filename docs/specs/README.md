@@ -6,6 +6,7 @@ This directory contains detailed specifications for each component in the dotfil
 
 | Component | Spec File | Code Location | Description |
 |-----------|-----------|---------------|-------------|
+| Hourly Forecast | [hourly-forecast.md](hourly-forecast.md) | `backend/src/main/kotlin/de/codecentric/heather/weather/`<br>`frontend/src/components/` | 24-hour hourly weather forecast with temperature and conditions |
 
 ## Purpose of These Specs
 
