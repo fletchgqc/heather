@@ -60,3 +60,4 @@ Try stuff like:
     - [Antigravity](https://antigravity.google/).
     - [GitHub SpecKit](https://github.com/github/spec-kit)
     - [AWS Kiro](https://kiro.dev/)
+    - [Get shit done](https://github.com/glittercowboy/get-shit-done)
