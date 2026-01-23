@@ -1,13 +1,14 @@
 # Context Engineering
 
-## Demo
-- Exercise: "change x". Atlas add REST API.
-	- no info.
-	- 87 page doco.
+## Exercises
+1. Use `/init` to generate base context for your agent. Prompt "what is this project" with and without the resultant file present and compare the result.
+2. (claude code) View your current context with `/context`
+3. Create two separate context files for working on tasks relating to two specific parts of your application, for example, frontend, backend, database, writing stories.
+4. Use context gating (aka. selective context loading): thin out your AGENTS.md file but include references to other files and instructions on when to load them.
+5. Try moving your instruction files to skills instead (read about agent skills online).
+5. Generate a subagent using `/agent` or by prompting.
 
-## Exercises and ideas
-- `/context`
-- `/init`
+## Ideas
 - Context compacting gives away control. Rather:
 	- `/clear` (`/new` in opencode)
 	- ask the agent to summarise your session:

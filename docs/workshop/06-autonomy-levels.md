@@ -1,5 +1,13 @@
 # Autonomy Levels
 
+## Exercise
+Discuss in groups for 10 minutes:
+1. What skills will you need now and in the future?
+2. How can you ensure you build and maintain them?
+3. How do you want to train others: juniors, or perhaps "seniors" :-)?
+4. What team size and makeup makes sense?
+5. Where in your current work can you see applications of different levels of control?
+
 ## Theory
 Level of agent autonomy comparable to 5 levels of autonomous driving.
 

@@ -1,13 +1,14 @@
 # Tools and Setup
 
-## Demo
-- *Start voice recording!*
-- Can you use AI in your project?
-- Try different models. Check usage in Portkey. GitHub hack.
-- Try some code changes?
-- What is a coding assistant, actually? Model, system prompt, tools, UI, features.
-- *End voice recording, summarise*
+## Exercises
+1. Configure an agentic CLI tool (e.g. Claude code with Portkey).
+2. Start your agentic CLI tool in a project repo and make some changes to your project.
+3. Find a way to bypass permissions completely.
+4. Use voice prompting to discuss a feature (or let someone interview you) and give the output to the CLI tool to implement.
+5. Implement your code with two different models. Compare the results.
+6. Build your own coding agent.
 
+## Inspiration
 ## This Repo
 - clone https://github.com/fletchgqc/heather
 - `/install`
@@ -97,7 +98,8 @@ Excercises are based on claude code, almost all should be achievable in all tool
 8. Run claude as a single-use command: `claude --dangerously-skip-permissions -p "your prompt here"`
 
 ## Build your own Agent!
-https://github.com/cc-ju/build-an-agent-workshop (from Jan Ulrich)
+- What is a coding assistant, actually? Model, system prompt, tools, UI, features.
+- https://github.com/cc-ju/build-an-agent-workshop (from Jan Ulrich)
 
 ## Copilot-specific Advice
 - Use vscode instead of IntelliJ for latest features, e.g. Plan Mode.

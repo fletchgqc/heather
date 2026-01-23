@@ -1,11 +1,14 @@
 # Spec Driven Development
 
-## Demo
-- Show DIY spec creation
-- Show SpecKit Video
+## Exercises
+1. Use planning mode in your agent to develop and then implement a plan.
+2. Prompt the files in the docs/specs directory and create specs like that (avoid word "plan").
+3. Write and use your own spec template.
+4. Try one of the frameworks listed below.
+5. Decide: where is your spec sweet spot?
 
-## Exercises and ideas
-- Form developer-PO pairs if possible. Define the future of refinement.
+## Inspiration
+- Form developer-PO pairs - the future of refinement?
 - Create a branch for each exercise, commit WIP after every step!
 
 ### DIY Speccing
@@ -56,3 +59,4 @@ Try stuff like:
     - [BMAD](https://github.com/bmad-code-org/BMAD-METHOD/tree/main). Tip: start with the quickest possible flow.
     - [Antigravity](https://antigravity.google/).
     - [GitHub SpecKit](https://github.com/github/spec-kit)
+    - [AWS Kiro](https://kiro.dev/)

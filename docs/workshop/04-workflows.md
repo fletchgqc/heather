@@ -1,6 +1,12 @@
 # Workflows
 This is a collection of inspirational ideas to get you thinking of what might help in your project.
 
+## Exercises
+1. Write a command or process for code review.
+2. Let two agent implementations be coded and use LLM as-a-judge to decide which is best. See scripts/parallel-claude.md for example.
+3. Try agent interaction with your code host (github/gitlab etc). Decide how you want to work.
+4. Write a hook or plugin which logs every prompt and tool use to a certain file named after your session id.
+
 ## Core Principle
 - maximise automation, minimise wait.
 - maximise enjoyable human value add, minimise tedious and tiring work.
