@@ -6,7 +6,7 @@
 3. Create two separate context files for working on tasks relating to two specific parts of your application, for example, frontend, backend, database, writing stories.
 4. Use context gating (aka. selective context loading): thin out your AGENTS.md file but include references to other files and instructions on when to load them.
 5. Try moving your instruction files to skills instead (read about agent skills online).
-5. Generate a subagent using `/agent` or by prompting.
+6. Generate a subagent using `/agent` or by prompting.
 
 ## Ideas
 - Context compacting gives away control. Rather:
