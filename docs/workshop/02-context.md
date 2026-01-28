@@ -23,6 +23,7 @@
 - Run a bash command, for example `!git ls-files` or `!git diff HEAD~1`. Then issue your prompt.
 - Always keep in mind what's in your context. You should at any time be able to summarise what's in your context (when did the conversation begin and what happened).
 - Anytime you have corrected the agent once or twice, try running `/learn` (custom command in this repo).
+	- Jannis version - reflect: https://gitlab.codecentric.de/jmm/shared_config/-/blob/9b41cb69520179dff9871da4e2d8030e49c0613e/src/.claude/commands/reflect.md
 	- Real-life prompt I used: "copilot config is stored in ~/.copilot, but when you executed the plan you hallucinated a different config directory. I want you to think about what went wrong  and update the plan so that this doesn't happen to future agents. Perhaps strongly encourage implementers to research where the tool stores its config files and to avoid hallucination, only use paths which are definitely read from the internet during internet search. The tools always document their config directories on the internet."
 - Session management (claude command names, similar functions available in other tools):
 	- go backwards: try double-escape or `/rewind` once you're a few prompts into a conversation.  Warning: this also restores code!
