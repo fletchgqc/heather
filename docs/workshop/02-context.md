@@ -66,6 +66,7 @@ Look at the command workflow/recursive-review.md. It creates generic subagents f
 	- write a prompt which causes it to be triggered automatically.
 
 ## Reading
+- https://www.youtube.com/watch?v=-uW5-TaVXu4 Good overview of context.
 - [MCP context dilution](https://www.anthropic.com/engineering/code-execution-with-mcp): MCP provides a foundational protocol for agents to connect to many tools and systems. However, once too many servers are connected, tool definitions and results can consume excessive tokens, reducing agent efficiency.
 - [How big is a token](https://tiktokenizer.vercel.app/).
 - How [prompt caching](https://ngrok.com/blog/prompt-caching/) works. https://ngrok.com/blog/prompt-caching/
