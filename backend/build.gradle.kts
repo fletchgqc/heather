@@ -20,7 +20,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("io.github.oshai:kotlin-logging-jvm:7.0.14")
+	implementation("io.github.oshai:kotlin-logging-jvm:8.0.01")
 	implementation("net.logstash.logback:logstash-logback-encoder:9.0")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.1")
 
