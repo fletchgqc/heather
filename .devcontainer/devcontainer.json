@@ -9,10 +9,7 @@
       "ZSH_IN_DOCKER_VERSION": "1.2.0"
     }
   },
-  "runArgs": [
-    "--cap-add=NET_ADMIN",
-    "--cap-add=NET_RAW"
-  ],
+  "runArgs": ["--cap-add=NET_ADMIN", "--cap-add=NET_RAW"],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -48,6 +45,7 @@
     }
   },
   "remoteUser": "node",
+  "initializeCommand": "bash -c 'docker run --rm -v \"$HOME:/source:ro\" -v \"claude-code-config-${devcontainerId}:/dest\" --user root node:24 sh -c \"if [ -d /source/.claude ]; then cp -r /source/.claude/* /dest/ 2>/dev/null || true; fi; if [ -f /source/.claude.json ]; then cp /source/.claude.json /dest/ 2>/dev/null || true; fi; chown -R 1000:1000 /dest\"'",
   "mounts": [
     "source=claude-code-bashhistory-${devcontainerId},target=/commandhistory,type=volume",
     "source=claude-code-config-${devcontainerId},target=/home/node/.claude,type=volume"
