@@ -30,7 +30,7 @@ dependencies {
 	testImplementation("io.kotest:kotest-assertions-core-jvm:6.2.4")
 	testImplementation("io.mockk:mockk:1.14.11")
 	testImplementation("com.ninja-squad:springmockk:5.0.1")
-	testImplementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.22.1")
+	testImplementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.22.2")
 
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
