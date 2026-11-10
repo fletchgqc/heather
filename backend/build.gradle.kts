@@ -5,7 +5,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.7"
 	id("io.gitlab.arturbosch.detekt") version "1.23.8"
 	id("com.google.cloud.tools.jib") version "3.5.4"
-	id("org.springdoc.openapi-gradle-plugin") version "1.9.0"
+	id("org.springdoc.openapi-gradle-plugin") version "2.1.0"
 }
 
 group = "de.codecentric"
